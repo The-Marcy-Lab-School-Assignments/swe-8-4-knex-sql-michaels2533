@@ -38,6 +38,7 @@ describe(testSuiteName, () => {
 
   it('Selects all long or movie books', async () => {
     const books = await selectAllLongOrMovieBooks();
+    console.log(books);
     expect(books).toEqual([
       { id: expect.any(Number), title: 'The Hobbit', genre: 'Fantasy', pages: 295, is_movie: true },
       { id: expect.any(Number), title: 'The Silmarillion', genre: 'Fantasy', pages: 432, is_movie: false },
